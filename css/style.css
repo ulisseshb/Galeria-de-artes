@@ -1,15 +1,15 @@
 :root {
-  --bg-body: #faf7f2; /* Fundo suave off-white / linho */
-  --bg-card: #ffffff; /* Branco puro iluminado */
+  --bg-body: #0c002e; /* Fundo suave off-white / linho */
+  --bg-card: #20105a; /* Branco puro iluminado */
   --bg-glass: rgba(255, 255, 255, 0.85);
-  --text-primary: #1c1917; /* Grafite quente profundo */
-  --text-secondary: #78716c; /* Cinza quente suave */
-  --gold-accent: #c59b27; /* Dourado nobre */
-  --gold-light: #fbf4e4; /* Fundo dourado translúcido */
-  --gold-hover: #a17c18;
-  --border-light: #e7e0d8; /* Bordas sutis de museu */
-  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.04);
-  --shadow-hover: 0 16px 36px rgba(197, 155, 39, 0.12);
+  --text-primary: #fbfbff; /* Grafite quente profundo */
+  --text-secondary: #d6cdfd; /* Cinza quente suave */
+  --blue-accent: #98b2ff;
+  --blue-light: #2d48aa; /* Fundo dourado translúcido */
+  --blue-hover: #d5dcf6;
+  --border-light: transparent; /* Bordas sutis de museu */
+  --shadow-subtle: 0 4px 20px rgba(149, 121, 239, 0.286);
+  --shadow-hover: 0 16px 36px rgba(112, 104, 205, 0.367);
 }
 
 * {
@@ -23,8 +23,8 @@ body {
   background-color: var(--bg-body);
   color: var(--text-primary);
   padding: 60px 24px;
-  background-image: radial-gradient(#e5dfd5 0.75px, transparent 0.75px);
-  background-size: 24px 24px; /* Textura suave de papel de aquarela */
+  background-image: radial-gradient(var(--bg-body), #060012);
+  background-size: cover
 }
 
 .container {
@@ -44,9 +44,9 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--gold-light);
-  color: var(--gold-hover);
-  border: 1px solid rgba(197, 155, 39, 0.3);
+  background: var(--blue-light);
+  color: var(--blue-hover);
+  border: 1px solid var(--blue-light);
   padding: 6px 16px;
   border-radius: 50px;
   font-size: 0.8rem;
@@ -58,7 +58,7 @@ body {
 
 .portfolio-header h1 {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
   color: var(--text-primary);
   letter-spacing: -0.5px;
@@ -69,7 +69,7 @@ body {
 .portfolio-header h1 span {
   font-style: italic;
   font-weight: 400;
-  color: var(--gold-accent);
+  color: var(--blue-light);
 }
 
 .portfolio-header p {
@@ -82,7 +82,7 @@ body {
 .header-divider {
   width: 50px;
   height: 2px;
-  background: var(--gold-accent);
+  background: var(--blue-light);
   margin: 20px auto 0;
   border-radius: 2px;
 }
@@ -90,8 +90,8 @@ body {
 /* --- GRID DOS QUADROS / CARDS --- */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
 }
 
 .project-card {
@@ -141,7 +141,7 @@ body {
 
 .card-tag {
   font-size: 0.72rem;
-  color: var(--gold-accent);
+  color: var(--blue-accent);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -183,7 +183,7 @@ body {
 }
 
 .lightbox-card {
-  background: #ffffff;
+  background: var(--bg-card);
   border-radius: 16px;
   overflow: hidden;
   max-width: 960px;
@@ -209,7 +209,7 @@ body {
 
 .lightbox-img-wrapper {
   flex: 1.35;
-  background: #181614;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,7 +232,7 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 14px;
-  background-color: #ffffff;
+  background-color: var(--bg-body);
   position: relative;
 }
 
@@ -241,8 +241,8 @@ body {
   align-self: flex-start;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--gold-accent);
-  background: var(--gold-light);
+  color: var(--blue-hover);
+  background: var(--blue-light);
   padding: 4px 12px;
   border-radius: 20px;
   text-transform: uppercase;
@@ -264,7 +264,7 @@ body {
 }
 
 #lightbox-description {
-  color: #57534e;
+  color: var(--text-primary);
   font-size: 0.95rem;
   line-height: 1.65;
   margin-top: 8px;
@@ -274,7 +274,7 @@ body {
 .counter {
   margin-top: 20px;
   font-size: 0.85rem;
-  color: var(--gold-hover);
+  color: var(--blue-hover);
   font-weight: 600;
   border-top: 1px solid var(--border-light);
   padding-top: 16px;
@@ -293,16 +293,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .lightbox-close:hover,
 .lightbox-nav:hover {
-  background: var(--gold-accent);
+  background: var(--blue-light);
   color: #ffffff;
-  border-color: var(--gold-accent);
-  transform: scale(1.08);
+  border-color: var(--blue-light);
+  transform: scale(1.2);
 }
 
 .lightbox-close {
@@ -316,7 +316,6 @@ body {
 
 .lightbox-nav {
   top: 50%;
-  transform: translateY(-50%);
   width: 52px;
   height: 52px;
   font-size: 22px;
