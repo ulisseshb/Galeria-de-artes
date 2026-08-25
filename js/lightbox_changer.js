@@ -1,60 +1,60 @@
 // Acervo de Projetos Artísticos dos Alunos
 const projects = [
     {
-        title: "Sonhos de Silício & Luz",
-        author: "Ana Beatriz Ramos",
-        category: "Escultura 3D & Render",
-        image: "https://picsum.photos/id/1018/900/650",
-        description: "Exploração de texturas naturais e iluminação etérea inspirada nos mestres da pintura clássica em composição digital contemporânea."
+        title: "Anúncio Wesing",
+        author: "Ulisses H. A. Borceda",
+        category: "Cartaz digital",
+        image: "./src/wesing.png",
+        description: "Anúncio hipotético para a marca Wesing utilizando diversos efeitos e ferramentas do Photoshop."
     },
     {
-        title: "Retrato em Tons Quentes",
-        author: "Lucas Ferreira",
-        category: "Fotografia Autoral",
-        image: "https://picsum.photos/id/1025/900/650",
-        description: "Ensaio fotográfico intimista focado em luz natural de fim de tarde, expressividade e gradação cromática suave."
+        title: "Logo Brain-Link",
+        author: "Ulisses H. A. Borceda",
+        category: "Ilustração digital de logo",
+        image: "./src/brain link.png",
+        description: "Logo em vetores feita para uma empresa hipotética no illustrator. O trabalho original inclui a metodologia para chegar a esse design."
     },
     {
-        title: "Harmonia Tipográfica",
-        author: "Carla Mendes",
-        category: "Design Editorial",
-        image: "https://picsum.photos/id/1035/900/650",
-        description: "Estudo de ritmo visual e espaço negativo aplicado a um manifesto sobre arte e sustentabilidade."
+        title: "Mulher Sem Espinhas",
+        author: "Ulisses H. A. Borceda",
+        category: "Imagem editada",
+        image: "./src/mulher.png",
+        description: "Uso da ferramenta de correção do Photoshop para remover espinhas e imperfeições leves de forma natural."
     },
     {
-        title: "Dança das Formas",
-        author: "Gabriel Souza",
-        category: "Arte Generativa",
-        image: "https://picsum.photos/id/1040/900/650",
-        description: "Algoritmos em JavaScript gerando padrões visuais orgânicos a partir de frequências harmônicas sonoras."
+        title: "Site Mundo UFC",
+        author: "Ulisses H. A. Borceda",
+        category: "Site HTML/CSS",
+        image: "./src/mundo ufc.png",
+        description: "Projeto de 8 horas que consiste em um site simples em HTML/CSS que simula um portal de notícias do UFC com 3 páginas."
     },
     {
-        title: "Metamorfose Floral",
-        author: "Juliana Duarte",
-        category: "Ilustração Digital",
-        image: "https://picsum.photos/id/1050/900/650",
-        description: "Pintura conceitual combinando técnicas tradicionais de aquarela com camadas digitais de pigmento e luz."
+        title: "Muro Estendido",
+        author: "Ulisses H. A. Borceda",
+        category: "Imagem editada",
+        image: "./src/muro.png",
+        description: "Uso de ferramentas de correção no Photoshop para estender uma imagem de um muro."
     },
     {
-        title: "Diálogo de Sombras",
-        author: "Pedro Alcântara",
-        category: "Direção de Arte",
-        image: "https://picsum.photos/id/1062/900/650",
-        description: "Série minimalista explorando o contraste entre a arquitetura brutalista e a fragilidade da natureza."
+        title: "Mudança de Cenário",
+        author: "Ulisses H. A. Borceda",
+        category: "Imagem editada",
+        image: "./src/cenario.png",
+        description: "Uso de filtros e diversas ferramentas no Photoshop para mudar a ambientação de uma foto de uma praia."
     },
     {
-        title: "Monólito do Vazio",
-        author: "Mariana Costa",
-        category: "Modelagem 3D",
-        image: "https://picsum.photos/id/1069/900/650",
-        description: "Instalação virtual explorando materiais nobres, reflexos dourados e atmosfera contemplativa de museu."
+        title: "Efeito de Pintura",
+        author: "Ulisses H. A. Borceda",
+        category: "Imagem editada",
+        image: "./src/pintura efeito.png",
+        description: "Uso de uma ferramenta no Photoshop para criar um efeito de pintura em uma foto."
     },
     {
-        title: "Névoa sobre o Horizonte",
-        author: "Thiago Lima",
-        category: "Pintura Matte",
-        image: "https://picsum.photos/id/1074/900/650",
-        description: "Paisagem panorâmica criada para narrativa de curta-metragem animado, inspirada no impressionismo."
+        title: "Anúncio de Vestibular",
+        author: "Ulisses H. A. Borceda",
+        category: "Montagem Photoshop",
+        image: "./src/vestibular.png",
+        description: "Anúncio hipotético para vestibular feito com montagem em Photoshop."
     }
 ];
 
